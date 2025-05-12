@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atharva Tupe | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <style>
+    :root {
+      --primary: #00adb5;
+      --bg: #0f0f0f;
+      --glass: rgba(255, 255, 255, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3em 1em 2em;
+      background: radial-gradient(circle at top, #1a1a1a 0%, #0f0f0f 100%);
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      object-fit: cover;
+      box-shadow: 0 0 15px var(--primary);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-top: 1rem;
+    }
+
+    .typewriter {
+      font-size: 1.1rem;
+      margin: 0.5em auto;
+      color: #ccc;
+    }
+
+    nav {
+      margin-top: 1em;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: 0.4s ease;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      padding: 4em 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 2rem;
+    }
+
+    .glass {
+      background: var(--glass);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 1.5em;
+      margin: 1em auto;
+      max-width: 700px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 0.5em 0;
+    }
+
+    .hobbies-list li i {
+      margin-right: 10px;
+      color: var(--primary);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    form input, form textarea {
+      background: #1c1c1c;
+      color: white;
+      border: 1px solid #444;
+      padding: 12px;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      padding: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    form button:hover {
+      background: #007e8a;
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      color: #aaa;
+      background: #111;
+      margin-top: 4em;
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        margin: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="Atharva.jpg" alt="Atharva Tupe" class="profile-pic" />
+  <h1>Atharva Sunil Tupe</h1>
+  <p class="typewriter">First Year IT Engineering Student | MIT Academy of Engineering</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <div class="glass">
+    <p>
+      I'm a first-year student at MIT Academy of Engineering, majoring in Information Technology.
+      I’m passionate about building smart systems and exploring how technology can improve everyday life.
+    </p>
+  </div>
+</section>
+
+<section id="skills" data-aos="fade-right">
+  <h2>Skills</h2>
+  <div class="glass">
+    <ul>
+      <li>💻 C Programming</li>
+      <li>🐍 Python</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" data-aos="fade-left">
+  <h2>Projects</h2>
+  <div class="glass">
+    <ul>
+      <li><strong>Zero Waste Campus Cafeteria:</strong> Designed a system to minimize food waste and promote sustainability.</li>
+      <li><strong>IoT-based Object Detection:</strong> A smart system for appliance control and monitoring using sensors and object recognition.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="hobbies" data-aos="fade-up">
+  <h2>Hobbies</h2>
+  <div class="glass">
+    <ul class="hobbies-list">
+      <li><i class="fas fa-swimmer"></i> Swimming</li>
+      <li><i class="fas fa-baseball-ball"></i> Cricket</li>
+      <li><i class="fas fa-book-reader"></i> Reading Novels</li>
+      <li><i class="fas fa-pray"></i> Reading Spiritual Books</li>
+      <li><i class="fas fa-mountain"></i> Exploring New Places</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" data-aos="zoom-in">
+  <h2>Contact Me</h2>
+  <div class="glass">
+    <p><strong>Phone:</strong> 8668945031</p>
+    <p><strong>Email:</strong> <a href="mailto:atharvatupe8721@gmail.com" style="color: var(--primary);">atharvatupe8721@gmail.com</a></p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Atharva Tupe. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Optional typewriter animation (simple)
+  const text = "First Year IT Engineering Student | MIT Academy of Engineering";
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      document.querySelector('.typewriter').textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 40);
+    }
+  }
+  document.querySelector('.typewriter').textContent = "";
+  type();
+</script>
+
+</body>
+</html>
